@@ -260,7 +260,7 @@
     <h1>Política de Privacidad de Talkie</h1>
     <dl class="meta-list">
       <dt>Última actualización</dt>
-      <dd>2026-10-17</dd>
+      <dd>2026-10-25</dd>
       <dt>Aplicación</dt>
       <dd>Talkie</dd>
       <dt>Desarrollador</dt>
@@ -358,7 +358,7 @@
 
   <h3>5.1 Google Firebase Analytics</h3>
   <p>Usamos Firebase Analytics para entender, de forma agregada, cómo se usa Talkie: qué pantallas se visitan, qué lecciones se completan, si un ejercicio se respondió bien o mal, cuánto XP se ganó, rachas, etc.</p>
-  <p>Los eventos que enviamos incluyen, por ejemplo: identificadores de lección/ejercicio, si una respuesta fue correcta o incorrecta (como valor verdadero/falso), XP ganado, racha de días, y metadatos de sesión. También registramos si completaste u omitiste el tutorial inicial y si tocaste "Valorar" o "Compartir" (solo el toque, sin datos personales).</p>
+  <p>Los eventos que enviamos incluyen, por ejemplo: identificadores de lección/ejercicio, si una respuesta fue correcta o incorrecta (como valor verdadero/falso), XP ganado, racha de días, y metadatos de sesión. También registramos si completaste u omitiste el tutorial inicial y si tocaste "Valorar" o "Compartir" y si se mostró o se omitió el anuncio de inicio de lección (solo el hecho, sin datos personales).</p>
   <p><strong>Lo que verificamos explícitamente en el código y confirmamos que Firebase Analytics NUNCA recibe</strong>:</p>
   <ul>
     <li>El texto que escribiste en un ejercicio.</li>
@@ -375,10 +375,10 @@
   <p>AdMob, como cualquier SDK publicitario de Google, puede recolectar identificadores del dispositivo (como el ID de publicidad de Android) y otra información técnica para fines de entrega y medición de anuncios, según la propia política de privacidad de Google. Talkie no le pasa a AdMob ningún dato personal adicional (no le enviamos tu nombre, tus respuestas, ni tu progreso).</p>
   <p>Reglas propias que aplicamos sobre cuándo se muestra un anuncio (esto no cambia qué datos recolecta AdMob, solo cuándo se le pide un anuncio):</p>
   <ul>
-    <li>Máximo 1 anuncio intersticial en tu primera sesión de uso de la app.</li>
-    <li>Máximo 2 anuncios intersticiales por sesión de uso normal.</li>
-    <li>Nunca dos anuncios seguidos en menos de 45 segundos.</li>
-    <li>Nunca mientras estás respondiendo, con el teclado abierto, en medio de una conversación, o usando la voz: los intersticiales aparecen solo entre ejercicios.</li>
+    <li>En tu primera sesión de uso de la app: máximo 1 anuncio intersticial, y ninguno al iniciar una lección.</li>
+    <li>En una sesión de uso normal: un anuncio al iniciar una lección (hasta 6 por sesión) y hasta 2 más a mitad de una lección o al terminar una conversación, pero nunca más de 1 anuncio intersticial por lección, ni al volver a abrir la misma lección.</li>
+    <li>Nunca dos anuncios a pantalla completa seguidos en menos de 90 segundos (tampoco después de un anuncio con premio).</li>
+    <li>Nunca mientras estás respondiendo, con el teclado abierto, en medio de una conversación, o usando la voz: los intersticiales aparecen al iniciar una lección (cuando tocás CONTINUAR, REPASAR o elegís una lección) o entre ejercicios, y nunca al abrir ni al cerrar la app. Cuando el consentimiento lo permite, Talkie solicita ese anuncio por adelantado mientras estás en la pantalla de inicio o de lecciones, para que aparezca sin esperas; si no está listo o falla, la lección se abre de inmediato.</li>
     <li>El anuncio con premio es opcional: al terminar una lección podés mirarlo para desbloquear el "Repaso Bonus". El repaso solo se desbloquea si mirás el anuncio completo (no por abrirlo y cerrarlo), y los XP extra se otorgan únicamente cuando completás ese repaso.</li>
   </ul>
 
