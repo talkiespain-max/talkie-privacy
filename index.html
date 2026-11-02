@@ -260,7 +260,7 @@
     <h1>Política de Privacidad de Talkie</h1>
     <dl class="meta-list">
       <dt>Última actualización</dt>
-      <dd>2026-10-25</dd>
+      <dd>2026-11-02</dd>
       <dt>Aplicación</dt>
       <dd>Talkie</dd>
       <dt>Desarrollador</dt>
@@ -375,11 +375,13 @@
   <p>AdMob, como cualquier SDK publicitario de Google, puede recolectar identificadores del dispositivo (como el ID de publicidad de Android) y otra información técnica para fines de entrega y medición de anuncios, según la propia política de privacidad de Google. Talkie no le pasa a AdMob ningún dato personal adicional (no le enviamos tu nombre, tus respuestas, ni tu progreso).</p>
   <p>Reglas propias que aplicamos sobre cuándo se muestra un anuncio (esto no cambia qué datos recolecta AdMob, solo cuándo se le pide un anuncio):</p>
   <ul>
-    <li>En tu primera sesión de uso de la app: máximo 1 anuncio intersticial, y ninguno al iniciar una lección.</li>
-    <li>En una sesión de uso normal: un anuncio al iniciar una lección (hasta 6 por sesión) y hasta 2 más a mitad de una lección o al terminar una conversación, pero nunca más de 1 anuncio intersticial por lección, ni al volver a abrir la misma lección.</li>
-    <li>Nunca dos anuncios a pantalla completa seguidos en menos de 90 segundos (tampoco después de un anuncio con premio).</li>
-    <li>Nunca mientras estás respondiendo, con el teclado abierto, en medio de una conversación, o usando la voz: los intersticiales aparecen al iniciar una lección (cuando tocás CONTINUAR, REPASAR o elegís una lección) o entre ejercicios, y nunca al abrir ni al cerrar la app. Cuando el consentimiento lo permite, Talkie solicita ese anuncio por adelantado mientras estás en la pantalla de inicio o de lecciones, para que aparezca sin esperas; si no está listo o falla, la lección se abre de inmediato.</li>
-    <li>El anuncio con premio es opcional: al terminar una lección podés mirarlo para desbloquear el "Repaso Bonus". El repaso solo se desbloquea si mirás el anuncio completo (no por abrirlo y cerrarlo), y los XP extra se otorgan únicamente cuando completás ese repaso.</li>
+    <li>Al iniciar cada lección: un anuncio intersticial (hasta 6 por sesión), también en tu primera sesión de uso de la app. Si al tocar CONTINUAR el anuncio todavía se está cargando, se espera unos segundos como máximo; si no llega, la lección se abre igual.</li>
+    <li>Al terminar cada lección: un anuncio intersticial antes de la pantalla de resultado.</li>
+    <li>Además, hasta 2 anuncios más por sesión a mitad de una lección o al terminar una conversación (máximo 1 en tu primera sesión), nunca más de uno de estos por lección, y nunca menos de 90 segundos después de otro anuncio a pantalla completa (tampoco después de un anuncio con premio). El anuncio de fin de lección no se muestra si acaba de cerrarse otro anuncio hace menos de 15 segundos.</li>
+    <li>Nunca mientras estás respondiendo, con el teclado abierto, en medio de una conversación, o usando la voz: los intersticiales aparecen al iniciar una lección (cuando tocás CONTINUAR, REPASAR o elegís una lección), al terminarla o entre ejercicios, y nunca al abrir ni al cerrar la app. Cuando el consentimiento lo permite, Talkie solicita ese anuncio por adelantado mientras estás en la pantalla de inicio o de lecciones, para que aparezca sin esperas; si no está listo o falla, la lección se abre de inmediato.</li>
+    <li>Vidas: cada lección empieza con 3 vidas y cada respuesta incorrecta resta una. Si te quedás sin vidas, podés mirar un anuncio con premio para recargarlas y seguir con la lección. Las vidas solo se recargan si mirás el anuncio completo; si el anuncio no está disponible, las vidas se recargan igual para que nunca quedes bloqueado.</li>
+    <li>Protector de racha y XP doble (opcionales): si faltaste un solo día, en Inicio podés mirar un anuncio con premio para no perder tu racha (como mucho una vez por semana); y al terminar una lección podés mirar un anuncio con premio para duplicar los XP de esa lección (una vez por lección). Son siempre opcionales y el premio solo se da si mirás el anuncio completo.</li>
+    <li>El anuncio con premio también es opcional al terminar una lección: podés mirarlo para desbloquear el "Repaso Bonus". El repaso solo se desbloquea si mirás el anuncio completo (no por abrirlo y cerrarlo), y los XP extra se otorgan únicamente cuando completás ese repaso.</li>
   </ul>
 
   <h3>5.3 Google User Messaging Platform (UMP) — consentimiento de anuncios</h3>
@@ -452,6 +454,10 @@
       <tr>
         <td data-label="Permiso">Micrófono</td>
         <td data-label="Para qué se usa">Solo para la práctica oral opcional, solicitado en el momento en que la activás — nunca al abrir la app</td>
+      </tr>
+      <tr>
+        <td data-label="Permiso">Notificaciones (<code>POST_NOTIFICATIONS</code>) y reprogramar avisos al reiniciar el teléfono (<code>RECEIVE_BOOT_COMPLETED</code>)</td>
+        <td data-label="Para qué se usa">Recordatorios opcionales para seguir con tus lecciones. Se generan y programan en tu propio teléfono (no hay servidor de notificaciones ni se envían datos), el permiso se pide recién después de tu primera lección y podés desactivarlos en Perfil → Recordatorios diarios o en los ajustes de Android</td>
       </tr>
       <tr>
         <td data-label="Permiso">ID de publicidad (permiso <code>AD_ID</code>, lo agrega el SDK de anuncios de Google)</td>
